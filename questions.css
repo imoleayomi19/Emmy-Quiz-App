@@ -26,8 +26,8 @@
 
 .que-container .qes-head h1{
   font-family:'Times New Roman', Times, serif;
-  font-size: 32px;
-  color: brown;
+  font-size: 35px;
+  color: black;
 }
 
 .que-container .time-out{
@@ -93,10 +93,6 @@
   transition: all 0.3s;
   border: none;
   outline: none;
-}
-
-.next-btn .next_btn{
-  margin-right: 50px;
 }
 
 .que-container .next-btn button:hover{
