@@ -45,3 +45,18 @@
   font-weight: 500;
   margin-bottom: 30px;
 }
+
+.complete .complete-head{
+  font-weight: 500;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.complete .score-text{
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.complete .restart{
+  font-weight: 100;
+}

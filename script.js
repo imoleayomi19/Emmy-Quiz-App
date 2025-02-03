@@ -35,8 +35,31 @@ let userScore = 0;
 
 const next_btn1 = que_container.querySelector(".next-btn");
 const result = document.querySelector(".complete");
-const restart_game = result.querySelector("restart");
-const quit_game = result.querySelector("quit");
+const restart_game = result.querySelector(".restart");
+const quit_game = result.querySelector(".quit");
+
+restart_game.onclick = () => {
+  result.classList.remove("activeResult");
+  que_container.classList.add("activeQus");
+  game_result.classList.remove("activeResult");
+  game_rules.classList.remove("activeRules");
+
+  // Reset values
+  que_count = 0;
+  timeValue = 10;
+  userScore = 0;
+  showQuestion(que_count);
+  clearInterval(counter);
+  startTimer(timeValue);
+};
+
+quit_game.onclick = () => {
+  // game_rules.classList.add("activeRules");
+  // que_container.classList.add("activeQus");
+  game_result.classList.remove("activeResult");
+
+  window.location.reload();
+};
 next_btn1.onclick = () => {
   if (que_count < questions.length - 1) {
     que_count++;
@@ -83,6 +106,8 @@ function optionSelected(answer) {
   let allOptions = list_option.children.length;
   let correctAns = questions[que_count].answer;
   if (userAns == correctAns) {
+    userScore += 1;
+    console.log(userScore);
     answer.classList.add("correct");
     console.log("Correct");
   } else {
@@ -105,6 +130,48 @@ function showResult() {
   game_rules.classList.remove("activeRules");
   que_container.classList.remove("activeQus");
   game_result.classList.add("activeResult");
+  const scoreText = game_result.querySelector(".score-text");
+  if (userScore > 3) {
+    let scoreTag =
+      `<span
+          >congrats! You only score
+          <p>` +
+      userScore +
+      `</p>
+          out of
+          <p>` +
+      questions.length +
+      `</p></span
+        >`;
+    scoreText.innerHTML = scoreTag;
+  } else if (userScore > 1) {
+    let scoreTag =
+      `<span
+          >nice! You only score
+          <p>` +
+      userScore +
+      `</p>
+          out of
+          <p>` +
+      questions.length +
+      `</p></span
+        >`;
+    scoreText.innerHTML = scoreTag;
+  } else userScore > 3;
+  {
+    let scoreTag =
+      `<span
+          >sorry! You only score
+          <p>` +
+      userScore +
+      `</p>
+          out of
+          <p>` +
+      questions.length +
+      `</p></span
+        >`;
+    scoreText.innerHTML = scoreTag;
+  }
 }
 
 function startTimer(time) {
