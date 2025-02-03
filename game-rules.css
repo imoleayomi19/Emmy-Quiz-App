@@ -1,0 +1,57 @@
+.game-rules{
+  width: 600px;
+  background: hsl(0, 0%, 100%);
+  padding: 10px 25px;
+  line-height: 40px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 2px 0.56px black;
+  display: none;
+}
+
+.activeRules{
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 5;
+  display: block;
+}
+
+
+.game-rules i {
+  color: hsl(136, 65%, 51%);
+}
+
+.game-rules h2{
+  font-size: 40px;
+  margin: 10px;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-rules button{
+  font-size: 20px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  font-weight: 600;
+  color: hsl(233, 26%, 24%);
+  padding: 15px 20px;
+  font-family: sans-serif;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-rules button:hover{
+  background: hsl(233, 26%, 24%);
+  color: hsl(136, 65%, 51%);
+}
+
+.cont-exit-btn {
+  text-align: center;
+}

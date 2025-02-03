@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/quiz-img.ng.jpg" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="game-rules.css" />
+    <link rel="stylesheet" href="start-btn.css" />
+    <link rel="stylesheet" href="questions.css" />
+    <link rel="stylesheet" href="game-completed.css" />
+    <title>ImoleAyo Quiz Game</title>
+  </head>
+  <body>
+    <div class="start-btn"><button type="button">Start Game</button></div>
+
+    <div class="game-rules">
+      <div class="rule-head"><h2>Game Rules</h2></div>
+      <hr />
+      <div class="rules">I. You can't quite the game while you're playing.</div>
+      <div class="rules">
+        II. You have only <i>10 seconds</i> for each questions.
+      </div>
+      <div class="rules">
+        IV. Once you pick your answer, it can't be cancle.
+      </div>
+      <div class="rules">
+        III. Once the time exceed you can't select any option.
+      </div>
+      <hr />
+      <div class="cont-exit-btn">
+        <button class="exit-btn" type="button">Exit Game</button
+        ><button class="cont-btn" type="button">Continue</button>
+      </div>
+    </div>
+
+    <div class="que-container">
+      <div class="qes-head">
+        <h1>Quiz Game</h1>
+        <p class="time-out">10</p>
+      </div>
+      <hr />
+      <div class="question">
+        <!-- <span>1. What is JavaScript?</span> -->
+      </div>
+      <div class="answer">
+        <!-- <button class="btn">
+          JavaScript is a programming language that allows you to implement
+          complex features on web pages
+        </button>
+        <button class="btn">JavaScript is a cascading style sheets</button>
+        <button class="btn">JavaScript means Hyper Text Makeup Language</button>
+        <button class="btn">None of the above</button> -->
+      </div>
+      <div class="next-btn">
+        <button class="next_btn">Next</button>
+      </div>
+    </div>
+
+    <div class="complete">
+      <img class="complete-img" src="image/trophy.png" alt="" />
+      <p>
+        You have completed the game you score <span>1</span>of <span>5</span>
+      </p>
+      <div>
+        <button class="restart">Replay Game</button>
+        <button class="quit">Exit Game</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+  </body>
+</html>

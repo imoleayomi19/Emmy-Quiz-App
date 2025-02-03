@@ -1,0 +1,21 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(136, 65%, 51%);
+}
+
+.start-btn,
+.game-rules,
+.que-container,
+.complete{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

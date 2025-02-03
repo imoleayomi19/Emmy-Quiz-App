@@ -1,0 +1,19 @@
+.start-btn button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: white;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+  border: none;
+  box-shadow: -2px 2px 2px 0.56px black;
+}
+
+.start-btn button:hover {
+  background: white;
+  color: hsl(136, 65%, 51%);
+}
